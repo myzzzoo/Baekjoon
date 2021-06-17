@@ -33,6 +33,6 @@ public class No3986 {
                     stack.push(c);
             }
         }
-        return stack.isEmpty()? true: false;
+        return stack.isEmpty();
     }
 }
