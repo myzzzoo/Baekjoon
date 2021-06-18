@@ -19,8 +19,8 @@ public class No12789 {
         Stack<Integer> stack = new Stack<>();
 
         String[] str = br.readLine().split(" ");
-        for(int i=0; i<n; i++){
-            queue.add(Integer.parseInt(str[i]));
+        for(String s : str){
+            queue.add(Integer.parseInt(s));
         }
 
         int start = 1;
