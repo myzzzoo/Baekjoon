@@ -1,6 +1,6 @@
 package com.company.baekjoon.stack;
 //압축
-
+//그냥 압축 전의 문자열을 구한후 총 길이 구하면 메모리 초과남
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
