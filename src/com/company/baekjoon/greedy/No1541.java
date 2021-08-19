@@ -1,9 +1,8 @@
-package com.company.baekjoon.dp;
+package com.company.baekjoon.greedy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 //잃어버린 괄호
 public class No1541 {
