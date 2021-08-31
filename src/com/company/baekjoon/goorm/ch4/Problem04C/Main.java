@@ -24,8 +24,8 @@ public class Main {
                 a = b;
                 b = c;
             }
-            long gcd = b;
-            long lcm = (numB/gcd)*numA;
+            long gcd = b; //최대공약수
+            long lcm = (numB/gcd)*numA; //최소공배수
             System.out.println("Case #"+(i+1)+":");
             System.out.println(gcd+" "+lcm);
         }
