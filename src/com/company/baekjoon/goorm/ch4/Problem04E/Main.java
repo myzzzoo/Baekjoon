@@ -3,7 +3,6 @@ package com.company.baekjoon.goorm.ch4.Problem04E;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 /**
  * 소인수분해
  */
