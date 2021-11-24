@@ -1,11 +1,11 @@
-package com.company.baekjoon.stepbystep.step13;
+package com.company.baekjoon.stepbystep.step14;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class No15652 {
+public class No15651 {
     static boolean[] visited ;
     static int[] arr;
     static StringBuilder sb = new StringBuilder();
@@ -19,10 +19,10 @@ public class No15652 {
         //visited = new boolean[n];
         arr = new int[m];
 
-        dfs(n,m,0,0);
+        dfs(n,m,0);
         System.out.println(sb);
     }
-    public static void dfs(int n, int m, int before, int depth){
+    public static void dfs(int n, int m, int depth){
         if(depth==m){
             for(int num:arr){
                 sb.append(num).append(" ");
@@ -30,9 +30,10 @@ public class No15652 {
             sb.append("\n");
             return ;
         }
-        for(int i=before; i<n; i++){
+        for(int i=0; i<n; i++){
             arr[depth] = i+1;
-            dfs(n,m,i,depth+1);
+            dfs(n,m,depth+1);
+
 
         }
         return;

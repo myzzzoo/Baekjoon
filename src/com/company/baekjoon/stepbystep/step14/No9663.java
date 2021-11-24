@@ -1,4 +1,4 @@
-package com.company.baekjoon.stepbystep.step13;
+package com.company.baekjoon.stepbystep.step14;
 
 import java.io.BufferedReader;
 import java.io.IOException;
