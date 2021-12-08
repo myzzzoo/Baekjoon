@@ -13,6 +13,7 @@ public class No1300 {
         K= Integer.parseInt(br.readLine());
 
         System.out.println(parametric_s(N, K));
+
     }
 
     public static long parametric_s(int N, int K) {
