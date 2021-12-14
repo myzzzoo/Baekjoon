@@ -13,7 +13,7 @@ public class No7576 {
     static int[] dx = {0,0,-1,1};
     static int[] dy = {-1,1,0,0};
 
-    static void BFS(int[][] arr, int n, int m){
+    public static void BFS(int[][] arr, int n, int m){
         Queue<Integer> qx = new LinkedList<>();
         Queue<Integer> qy = new LinkedList<>();
         for(int i=0; i<n; i++){
@@ -51,7 +51,7 @@ public class No7576 {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -62,19 +62,19 @@ public class No7576 {
         visited = new boolean[n][m];
 
 
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
-            for(int j=0; j<m; j++){
+            for (int j = 0; j < m; j++) {
                 int num = Integer.parseInt(st.nextToken());
-                arr[i][j] =num;
+                arr[i][j] = num;
             }
         }
-        BFS(arr,n,m);
+        BFS(arr, n, m);
 
         //2중 리스트 출력
         int max = 1;
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 if (arr[i][j] == 0) {
                     System.out.println("-1");
                     return;
@@ -84,10 +84,6 @@ public class No7576 {
                 }
             }
         }
-        System.out.println(max-1);
-
-
-
-
+        System.out.println(max - 1);
     }
 }
